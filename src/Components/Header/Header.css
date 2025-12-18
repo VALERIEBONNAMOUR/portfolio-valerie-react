@@ -1,0 +1,10 @@
+.navbar-header{
+    background-color: white;
+    top:0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header_nav ul{
+    list-style-type: none;
+}

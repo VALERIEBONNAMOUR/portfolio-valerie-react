@@ -1,0 +1,62 @@
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🔲 Rectangle blanc */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: white;
+  padding: 32px 40px;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 12px;
+}
+
+/* Texte */
+.slide-content h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.slide-content p {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+
+
+@media (max-width: 768px) {
+  .slide-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+}
