@@ -1,13 +1,13 @@
-import Slider from "../components/Slider/Slider.jsx";
-import Apropos from "../Components/About/About.jsx";
+import Banner from "../Components/Banner/Banner.jsx"; 
+import "./Home.css";
 
 
 const Home = () => {
   return (
     <>
-      <Slider />
+      
       <main>
-        <Apropos />
+        <Banner />
       </main>
     </>
   );

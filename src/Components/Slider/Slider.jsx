@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Slider.css";
 
+
 const images = [
   "/images/slide1.webp",
   "/images/slide2.webp",
@@ -33,7 +34,7 @@ const Slider = () => {
           {index === 0 && currentIndex === 0 && (
             <div className="slide-content">
               <h1>Valérie BONNAMOUR</h1>
-              <p>Développeuse Web Junior</p>
+              <p>Développeuse Web</p>
             </div>
           )}
         </div>
