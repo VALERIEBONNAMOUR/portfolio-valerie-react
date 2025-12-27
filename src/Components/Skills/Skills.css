@@ -27,14 +27,14 @@
   transform: translate(-80px);
 }
 
-/* Séparateur vertical */
+
 .skills-divider {
   width: 6px;
   background-color: #3F51B5;
   border-radius: 4px;
 }
 
-/* Soft skills */
+
 .soft-skills {
   color: #3F51B5;
   display: flex;
@@ -49,9 +49,11 @@
   text-align: left;
 }
 
+.skills{
+  margin-bottom: 30px;
+}
 
 
-/* TABLETTE */
 @media (max-width: 1024px) {
   .skills-container {
     gap: 30px;
@@ -62,7 +64,7 @@
   }
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
   .skills {
     padding: 60px 5%;
@@ -82,7 +84,7 @@
     width: 100%;
   }
 
-  /* Séparateur devient horizontal */
+  
   .skills-divider {
     width: 80%;
     height: 4px;
