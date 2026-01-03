@@ -1,27 +1,49 @@
 import "./Footer.css";
-import linkedinIcon from "../../assets/linkedin.png"; 
-import githubIcon from "../../assets/github.png"; 
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>© Copyright 2025 – Valérie BONNAMOUR. Tous droits réservés.</p>
-      <div className="footer__icons">
-        <a
-          href="https://www.linkedin.com/in/valerie-bonnamour"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={linkedinIcon} alt="LinkedIn" />
-        </a>
-        <a
-          href="https://github.com/valerie-bonnamour"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={githubIcon} alt="GitHub" />
-        </a>
+    <footer className="footer" id="contact">
+      <div className="footer__title">
+        <span className="footer__bar"></span>
+        <h2>CONTACT</h2>
       </div>
+
+      <div className="footer__content">
+        <div className="footer__left">
+          <p>Pour me contacter, cliquez sur l'icône ci-dessous :</p>
+          <a
+            href="mailto:bvmarketing@orange.fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="far fa-envelope social-icon"></span>
+          </a>
+        </div>
+
+        <div className="footer__right">
+          <p>Retrouvez-moi également sur les sites :</p>
+          <div className="footer__icons">
+            <a
+              href="https://www.linkedin.com/in/val%C3%A9rie-bonnamour-168b94128/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="fab fa-linkedin social-icon"></span>
+            </a>
+            <a
+              href="https://github.com/VALERIEBONNAMOUR?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="fab fa-github social-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p className="footer__copyright">
+        © Copyright 2025 – Valérie BONNAMOUR. Tous droits réservés.
+      </p>
     </footer>
   );
 };

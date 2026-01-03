@@ -30,7 +30,7 @@ const Slider = () => {
         >
           <img src={image} alt={`Slide ${index + 1}`} />
 
-          {/* 🔹 Contenu UNIQUEMENT sur le 1er slide */}
+         
           {index === 0 && currentIndex === 0 && (
             <div className="slide-content">
               <h1>Valérie BONNAMOUR</h1>

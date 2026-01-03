@@ -8,7 +8,7 @@ const Skills = () => {
       <h2 className="skills-title">Compétences</h2>
 
       <div className="skills-container">
-        {/* Partie gauche */}
+        
         <div className="skills-column">
           <h3>Technologies</h3>
           <img
@@ -18,10 +18,10 @@ const Skills = () => {
           />
         </div>
 
-        {/* Séparateur */}
+       
         <div className="skills-divider"></div>
 
-        {/* Partie droite */}
+    
         <div className="skills-column">
           <h3>Soft Skills</h3>
           <ul className="soft-skills">

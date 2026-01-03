@@ -1,0 +1,101 @@
+.savoir-faire {
+  padding: 4rem 0;
+  color: #0a0101;
+}
+
+.logo-container {
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.logo {
+  max-width: 200px; 
+  height: auto;
+  display: inline-block;
+}
+
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  font-family: "Lucida Calligraphy", cursive;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.intro p {
+  margin: 0.5em 0; 
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+
+.skill-card {
+  background: #0630cc;
+  padding: 2rem;
+  border-radius: 14px;
+  cursor: pointer;
+  min-height: 120px;
+  transition: background-color 0.3s ease, transform 0.3s ease, min-height 0.4s ease;
+}
+
+.skill-card:hover {
+  background: #ff6b00fc;
+}
+
+
+.skill-card.expanded {
+  min-height: 320px;
+  transform: translateY(-6px);
+}
+
+
+.skill-card h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+}
+
+
+.skill-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.skill-card.expanded .skill-content {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.skill-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    font-size: 1.2rem;
+  }
+}

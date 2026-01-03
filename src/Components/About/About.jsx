@@ -26,7 +26,7 @@ const Apropos = () => {
         </div>
 
         <a
-          href="/CV_Valerie_Bonnamour.pdf"
+          href="images/CV_Valerie_Bonnamour.pdf"
           download="CV_Valerie_Bonnamour.pdf"
           className="cv-button"
         >
