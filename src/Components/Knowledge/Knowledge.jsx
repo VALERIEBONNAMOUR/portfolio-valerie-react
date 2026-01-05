@@ -39,7 +39,7 @@ export default function SavoirFaire() {
   </div>
    <div className="intro">
   <p>
-    “Je vous accompagne de A à Z dans votre communication digitale, en
+    “Je vous accompagne dans votre communication digitale, en
     construisant des stratégies sur-mesure adaptées à vos objectifs, vos
     moyens et votre potentiel.”
   </p>
