@@ -66,6 +66,7 @@
 
   opacity: 0;
   animation: slideInCV 5s ease forwards;
+  z-index: 10;
 }
 
 .cv-button:hover {
@@ -114,7 +115,41 @@
   }
 
   .cv-button {
-    display: none;
+   position: static;
+    transform: none;
+    animation: none;
+    margin-top: 24px;
+    width: auto;
+    height: auto;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    opacity: 1;
   }
 
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .apropos-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apropos-text {
+    text-align: center;
+  }
+
+  .cv-button {
+    position: static;
+    transform: none;
+    animation: none;
+    opacity: 1;
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+  }
+}
+

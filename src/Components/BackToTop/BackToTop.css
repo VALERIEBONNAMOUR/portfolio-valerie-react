@@ -5,6 +5,8 @@
   background-color: #ff6b00;
   color: white;
   border: none;
+  width: 44px;
+  height: 44px;
   padding: 8px;
   border-radius: 50%;
   font-size: 1.2rem;
@@ -22,4 +24,31 @@
 .back-to-top__button i {
   font-size: 1.2rem;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .back-to-top__button {
+    bottom: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .back-to-top__button:hover {
+    transform: none; 
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top__button {
+    bottom: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .back-to-top__button i {
+    font-size: 1rem;
+  }
 }

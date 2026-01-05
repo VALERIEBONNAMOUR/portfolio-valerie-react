@@ -1,7 +1,10 @@
+import { useState } from "react";
 import "./Header.css";
 import logo from "../../assets/logo.png";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="navbar-header">
       <div className="header__logo">
@@ -10,7 +13,15 @@ const Header = () => {
         </a>
       </div>
 
-      <nav className="header__nav">
+      <button
+        className="burger"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Menu"
+      >
+        ☰
+      </button>
+
+      <nav className={`header__nav ${menuOpen ? "open" : ""}`}>
         <ul>
           <li><a href="#about">À propos</a></li>
           <li><a href="#competences">Compétences</a></li>
