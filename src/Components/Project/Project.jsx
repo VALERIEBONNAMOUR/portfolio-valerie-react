@@ -1,4 +1,3 @@
-import React from "react";
 import "./Project.css";
 
 import ninaCarducci from "../../assets/nina_carducci.webp";

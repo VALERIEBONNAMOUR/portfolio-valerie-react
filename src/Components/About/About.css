@@ -111,7 +111,7 @@
   }
 
   .apropos-portrait {
-    margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   .cv-button {
@@ -137,6 +137,10 @@
 
   .apropos-text {
     text-align: center;
+  }
+
+  .apropos-portrait {
+    margin-top: 40px;
   }
 
   .cv-button {

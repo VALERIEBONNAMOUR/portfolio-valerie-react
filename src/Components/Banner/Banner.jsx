@@ -1,4 +1,3 @@
-import React from "react";
 import "./Banner.css";
 import Slider from "../Slider/Slider.jsx";
 
