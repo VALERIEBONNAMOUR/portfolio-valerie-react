@@ -4,13 +4,14 @@ import "./BackToTop.css";
 const BackToTop = () => {
   const [visible, setVisible] = useState(false);
 
-  const toggleVisibility = () => {
-    if (window.scrollY > 300) {
-      setVisible(true);
-    } else {
-      setVisible(false);
-    }
-  };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setVisible(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -19,19 +20,14 @@ const BackToTop = () => {
     });
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
+  if (!visible) return null;
 
   return (
-    <>
-      {visible && (
-        <button className="back-to-top__button" onClick={scrollToTop}>
-          <i className="fas fa-arrow-up"></i> 
-        </button>
-      )}
-    </>
+    <div className="back-to-top-wrapper">
+      <button className="back-to-top__button" onClick={scrollToTop}>
+        <i className="fas fa-arrow-up"></i>
+      </button>
+    </div>
   );
 };
 
