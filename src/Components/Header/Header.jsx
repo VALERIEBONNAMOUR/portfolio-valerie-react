@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Header.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,15 +8,13 @@ const Header = () => {
   return (
     <header className="navbar-header">
       <div className="header__logo">
-        <a href="#home">
-          <img src={logo} alt="Logo" />
-        </a>
+          <img src={logo} alt="BV MARKETING" />
       </div>
 
       <button
         className="burger"
         onClick={() => setMenuOpen(!menuOpen)}
-        aria-label="Menu"
+        aria-label="Menu principal"
       >
         ☰
       </button>

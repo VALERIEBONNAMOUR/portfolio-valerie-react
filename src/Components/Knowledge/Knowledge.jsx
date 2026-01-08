@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Knowledge.css";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo.webp";
 
 const skills = [
   {
@@ -35,7 +35,7 @@ export default function SavoirFaire() {
   return (
     <section className="savoir-faire" id="savoir-faire">
         <div className="logo-container">
-    <img src={Logo} alt="Logo BV Marketing" className="logo" />
+    <img src={Logo} alt="BV Marketing" className="logo" />
   </div>
    <div className="intro">
   <p>
